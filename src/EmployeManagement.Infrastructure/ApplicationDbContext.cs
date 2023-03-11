@@ -20,7 +20,7 @@ public class ApplicationDbContext : IdentityDbContext<IdentityUser, IdentityRole
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        optionsBuilder.UseSqlServer("Server=127.0.0.1; Database=EmployeeManagement; user id=sa; password=dev;Trusted_Connection=True; MultipleActiveResultSets=true;TrustServerCertificate=True;");
+        //optionsBuilder.UseSqlServer("Server=127.0.0.1; Database=EmployeeManagement; user id=sa; password=dev;Trusted_Connection=True; MultipleActiveResultSets=true;TrustServerCertificate=True;");
         base.OnConfiguring(optionsBuilder);
     }
 
